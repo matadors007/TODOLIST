@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-        <div>
-                <a href="home.html"> Home </a>
-                <button ><a href="connexion.html"  > Connexion</a></button>
-                <button ><a href="inscription.html"  > Inscription</a></button>
+        <div class="commande">
+                <a class="c" href="home.html"> Home </a>
+                <button class="c"><a href="connexion.html"  > Connexion</a></button>
+                <button class="c"><a href="inscription.html"  > Inscription</a></button>
                     </div>
-                <div>
-                        Nom<br><input type="text" name="nom"><br>
-                        Prenon<br> <input type="text" name="prenom"> <br>
+                <div class="is1">
+                    <form class="formulaire" method="POST" action="home.html">
+                        Nom<br><input type="text" name="nom"required><br>
+                        Prenon<br> <input type="text" name="prenom"required> <br>
                        
-                        Date De Naissance:<br><input type="date" name="date"><br>
-                        Genre: <br> <input type="radio" name="genre" value="male"checked>
+                        Date De Naissance:<br><input type="date" name="date"required><br>
+                        Genre: <br> <input type="radio" name="genre" value="male"checked >
                                    Homme<br>
                                    <input type="radio" name="genre" value="female"> 
                                    femme<br>
                        
-                        Nationnalité:<select name="langues">
+                        Nationnalité:<select name="langues"required>
                                  <option value="tn">tunisienne</option> 
                                    <option value="fr">Française</option>
                                    <option value="Eng">anglaise</option>            
-                </select><br>
-                Liste d'interet<br><input type="checkbox" name="sport" value="sport">Sport<br>
+                </select><br><br><br><br>
+                Liste d'interet:<br><input type="checkbox" name="sport" value="sport"required>Sport<br>
                                     <input type="checkbox" name="music" value="music">music<br>
                                     <input type="checkbox" name="lecture" value="lecture">lecture<br>
-                Bio:<br> <textarea name="msg" rows="10" cols="10">
+                Bio:<br> <textarea name="msg" rows="10" cols="30"required>
                     c'est un textarea
                 </textarea><br>
                 E-Mail<br><input type="email" name="email"required><br>
-                Password:<br> <input type="password" required><br>
-                </div>
+                Password:<br> <input type="password" required><br><br>
+                
+                <button class="b1">Inscription</button>
+            </form>
+        </div>
 </body>
 </html>

@@ -1,0 +1,47 @@
+.titre{
+    text-align: center ;
+    color: darkblue;
+}
+body{
+    background-image: url(../../formalabhtml/img/fine-decor-pulse-ogee-silver-grey-curve-glitter-wallpaper-fd42337-p9183-3244_image.jpg);
+
+} 
+p{
+    font-weight: bolder;
+  font-style: oblique;
+}
+h3{
+    color: crimson;
+    font-size: 25px;
+}
+.order{
+    color: royalblue;
+    font-weight: bolder;
+}
+a{
+    color: brown; 
+    text-decoration: none;
+    font-style: italic; 
+font-weight: bold;
+
+a:hover{
+    color: darkblue;
+    text-decoration:underline;
+}
+
+a:visited{
+    color: darkred;
+}
+
+a:hover{
+    color: rgb(184, 144, 11);
+    text-decoration: underline;
+}
+
+a:visited{
+    color: forestgreen;
+}
+.list{
+   color: royalblue;
+    font-weight: bolder;
+}
