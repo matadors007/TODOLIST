@@ -8,17 +8,18 @@
 <body>
     
         <div class="commande">
-                <button class="c" ><a href="home.html"  > Home</a></button>
-                <button class="p1" ><a href="ajout.html"  > Ajout</a></button>
-                <button class="p1"><a href="profil.html"  > Profil</a></button>
-                <button class="p1"><a href="acceuil.html"  > Deconnexion</a></button>
+                <button class="c" onclick="passage()"><a href="home.html"  > Home</a></button>
+                <button class="p1" onclick="passage()" ><a href="ajout.html"  > Ajout</a></button>
+                <button class="p1"onclick="passage()"><a href="profil.html"  > Profil</a></button>
+                <button class="p1"onclick="passage()"><a href="acceuil.html"  > Deconnexion</a></button>
         </div>
-    <form class="i1" action="acceuil.html" method="POST">
+    <form class="i1" action="acceuil.html" method="POST" name="inscrit" onsubmit="return verif()">
         Titre :<br>
         <input class="i2" type="text" name="titre" required><br>
         Action:<br>
         <input class="i2" type="text" name="action" required><br><br>
         <button>Accepter</button>
     </form>    
+    <script src="../js/script.js"></script>
 </body>
 </html>
