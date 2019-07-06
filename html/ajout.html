@@ -1,25 +1,38 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
     <meta charset="UTF-8">
     <title>Ajout</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    
-        <div class="commande">
-                <button class="c" onclick="passage()"><a href="home.html"  > Home</a></button>
-                <button class="p1" onclick="passage()" ><a href="ajout.html"  > Ajout</a></button>
-                <button class="p1"onclick="passage()"><a href="profil.html"  > Profil</a></button>
-                <button class="p1"onclick="passage()"><a href="acceuil.html"  > Deconnexion</a></button>
-        </div>
-    <form class="i1" action="acceuil.html" method="POST" name="inscrit" onsubmit="return verif()">
-        Titre :<br>
-        <input class="i2" type="text" name="titre" required><br>
-        Action:<br>
-        <input class="i2" type="text" name="action" required><br><br>
-        <button>Accepter</button>
-    </form>    
+
+
+
+
+    <div class="commande">
+        <a class="logo" href="home.html"></a>
+        <a href="ajout.html"> <input class="c" type="button" value="ajout"></a>
+        <a href="profil.html"><input class="c1" type="button" value="profil"></a>
+        <a href="acceuil.html"> <input class="c2" type="button" value="acceuil"></a>
+
+    </div>
+
+
+
+
+    <div class="formu">
+        <form class="i1" action="acceuil.html" method="POST" name="inscrit" onsubmit="return verif()">
+            Titre :<br>
+            <input class="i2" type="text" name="titre" required><br>
+            Action:<br>
+            <input class="i2" type="text" name="action" required><br><br>
+            <button class="i4"> <a href="acceuil.html">Accepter</a> </button>
+        </form>
+    </div>
     <script src="../js/script.js"></script>
 </body>
+
 </html>

@@ -1,44 +1,50 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-        <div class="commande">
-                <a class="c" href="home.html" > Home </a>
-                <button class="c"onclick="passage()"><a href="connexion.html"  > Connexion</a></button>
-                <button class="c"onclick="passage()"><a href="inscription.html"  > Inscription</a></button>
-                    </div>
-                <div class="is1">
-                    <form class="formulaire" method="POST" action="home.html"name="form" onsubmit="return controle()">
-                        Nom<br><input type="text" name="nom"><br>
-                        Prenon<br> <input type="text" name="prenom"> <br>
-                       
-                        Date De Naissance:<br><input type="date" name="date"required><br>
-                        Genre: <br> <input type="radio" name="genre" value="male"checked >
-                                   Homme<br>
-                                   <input type="radio" name="genre" value="female"> 
-                                   femme<br>
-                       
-                        Nationnalité:<select name="langues"required>
-                                 <option value="tn">tunisienne</option> 
-                                   <option value="fr">Française</option>
-                                   <option value="Eng">anglaise</option>            
-                </select><br><br><br><br>
-                Liste d'interet:<br><input type="checkbox" name="sport" value="sport"required>Sport<br>
-                                    <input type="checkbox" name="music" value="music">music<br>
-                                    <input type="checkbox" name="lecture" value="lecture">lecture<br>
-                Bio:<br> <textarea name="msg" rows="10" cols="30"required>
-                  
+    <div class="commande">
+        <a class="logo" href="home.html">
+        </a>
+        <a href="connexion.html"> <input class="c" type="button" value="Connexion"></a>
+        <a href="inscription.html"><input class="c1" type="button" value="Inscription"></a>
+    </div>
+    <div class="is1">
+        <form class="i" method="POST" action="home.html" name="form" onsubmit="return controle()">
+            Nom<br><input class="i3" type="text" name="nom"><br>
+            Prenon<br> <input class="i3" type="text" name="prenom"> <br>
+
+            Date De Naissance:<br><input class="i3" type="date" name="date" required><br>
+            Genre: <br> <input class="i6" type="radio" name="genre" value="male" checked>
+            Homme<br>
+            <input class="i6" type="radio" name="genre" value="female">
+            femme<br><br>
+
+
+            Nationnalité:<select class="i3" name="langues" required>
+                <option value="tn">tunisienne</option>
+                <option value="fr">Française</option>
+                <option value="Eng">anglaise</option>
+            </select><br><br><br><br>
+            Liste d'interet:<br>
+            <input class="i6" type="checkbox" name="sport" value="sport" required>Sport<br>
+            <input class="i6" type="checkbox" name="music" value="music">music<br>
+            <input class="i6" type="checkbox" name="lecture" value="lecture">lecture<br><br>
+            Bio:<br> <textarea class="i5" name="msg" rows="10" cols="30" required>
+
                 </textarea><br>
-                E-Mail<br><input type="email" name="email"><br>
-                Password:<br> <input type="password" name="password" ><br><br>
-                
-                <button class="b1">Inscription</button>
-            </form>
-            <script src="../js/script.js"></script>
-        </div>
+            E-Mail<br><input class="i3" type="email" name="email"><br>
+            Password:<br> <input class="i3" type="password" name="password"><br><br>
+
+            <button class="i4">Inscription</button>
+        </form>
+        <script src="../js/script.js"></script>
+    </div>
 </body>
+
 </html>

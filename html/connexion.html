@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Connexion</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-        <div class="commande">
-                <a href="home.html" onclick="passage()"> Home </a>
-                <button class="c" onclick="passage()" ><a href="connexion.html"  > Connexion</a></button>
-                <button class="c" onclick="passage()"><a href="inscription.html"  > Inscription</a></button>
-         </div>
-         <br>
-         <div class="i1">
 
-           <form action="acceuil.html" method="POST" name="log" onsubmit="return valid()">
-             E-Mail<br><input class="i2" type="email" name="mail" required><br>
-             Password<br> <input class="i2" type="password" name="pswd" required> <br>
-             <button class="i4"> <a href="acceuil.html" >Login</a> </button>
-            </form>            
-            
-         </div>
-    <script src="../js/script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="commande">
+    <a class="logo" href="home.html"></a>
+    <a href="connexion.html"> <input class="c" type="button" value="Connexion"></a>
+    <a href="inscription.html"><input class="c1" type="button" value="Inscription"></a>
+  </div>
+  <br>
+  <div class="i1">
+
+    <form action="acceuil.html" method="POST" name="log" onsubmit="return valid()">
+      E-Mail<br><input class="i2" type="email" name="mail" required><br>
+      Password<br> <input class="i2" type="password" name="pswd" required> <br>
+      <button class="i4"> <a href="acceuil.html">Login</a> </button>
+    </form>
+
+  </div>
+  <script src="../js/script.js"></script>
 </body>
+
 </html>
