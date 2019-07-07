@@ -6,15 +6,12 @@
     <title>Ajout</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- appel a bibliothéque Bootstrap-->
+        <link rel="stylesheet" href="../css/style.css"> <!-- appel a la fichier css-->
 </head>
 
 <body>
-
-
-
-
-    <div class="commande">
+    <div class="commande"> <!-- Partie de Boutons et qui contient des tests JavaScript -->
         <a class="logo" href="home.html" onclick="passage()"></a>
         <a href="ajout.html" onclick="passage()"> <input class="button1" type="button" value="AJOUT"></a>
         <a href="profil.html" onclick="passage()"><input class="button2" type="button" value="PROFIL"></a>
@@ -22,10 +19,7 @@
 
     </div>
 
-
-
-
-    <div class="ajouter">
+    <div class="ajouter"> <!-- Partie de Formulaire-->
         <form class="ajout" action="acceuil.html" method="POST" name="inscrit" onsubmit="return verif()">
             Titre :<br>
             <input class="cord2" type="text" name="titre" required><br>
@@ -33,7 +27,7 @@
             <input class="cord2" type="text" name="action" required><br><br>
             <button class="btn btn-warning"> <a href="acceuil.html">Accepter</a> </button>
         </form>
-    </div>
+    </div> <!-- appel au fichier js pour faire des tests-->
     <script src="../js/script.js"></script>
 </body>
 

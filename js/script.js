@@ -24,14 +24,20 @@ function controle() {
         alert('Le champ ne peut pas rester vide !! entrer un bio');
         return false;
     }
+  
     if (document.form.email.value == '') {
         alert('Le champ ne peut pas rester vide !! entrer un email');
         return false;
     }
     if (document.form.password.value == '') {
-        alert('Le champ ne peut pas rester vide !! entrer un password');
+        alert('Verifier Votre Mot De Passe');
         return false;
+          
     }
+    if (document.log.pswd.value.length < 7) {
+        alert('Verifier Votre Mot De Passe');
+        return false;
+    } 
 }
 
 function passage() {

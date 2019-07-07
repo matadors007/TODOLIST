@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <title>Connexion</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- appel a la bibliothéque Bootstrap-->
+    <link rel="stylesheet" href="../css/style.css"> <!-- appel a la fichier css-->
 </head>
 
 <body>
-  <div class="commande">
+  <div class="commande"><!--partie des boutons avec appel a des tests javascript-->
     <a class="logo" href="home.html" onclick="passage()"></a>
     <a href="connexion.html" onclick="passage()"> <input class="button1" type="button" value="CONNEXION"></a>
     <a href="inscription.html" onclick="passage()"><input class="button2" type="button" value="INSCRIPTION"></a>
   </div>
+
   <br>
-  <div class="ajouter">
+
+  <div class="ajouter"><!--Partie de formulaire -->
     <form class="ajout" action="acceuil.html" method="POST" name="inscrit" onsubmit="return valid()">
-        E-Mail :<br>
-        <input class="cord2" type="email" name="titre" required><br>
-        Password:<br>
-        <input class="cord2" type="password" name="action" required><br><br>
-        <button class="btn btn-warning"> <a href="acceuil.html">Login</a> </button>
+      E-Mail :<br>
+      <input class="cord2" type="email" name="titre" required><br>
+      Password:<br>
+      <input class="cord2" type="password" name="action" required><br><br>
+      <button class="btn btn-warning"> <a href="acceuil.html">Login</a> </button>
     </form>
-</div>
+  </div>
+  <!-- Appel au la fichier js pour faire des tests -->
   <script src="../js/script.js"></script>
 </body>
 

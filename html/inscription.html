@@ -6,16 +6,17 @@
     <title>Inscription</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+     <!-- appel a bibliothéque Bootstrap-->
+        <link rel="stylesheet" href="../css/style.css"><!-- appel a la fichier css-->
 </head>
 
 <body>
-    <div class="commande">
+    <div class="commande">  <!-- Partie de Boutons et qui contient des tests JavaScript -->
         <a class="logo" href="home.html" onclick="passage()"></a>
         <a href="connexion.html" onclick="passage()"> <input class="button1" type="button" value="CONNEXION"></a>
         <a href="inscription.html" onclick="passage()"><input class="button2" type="button" value="INSCRIPTION"></a>
     </div>
-    <div class="inscrit">
+    <div class="inscrit">    <!-- Partie de Formulaire-->
         <form class="formu" method="POST" action="home.html" name="form" onsubmit="return controle()">
             Nom :<br><input class="cord3" type="text" name="nom"><br>
             Prenom :<br> <input class="cord3" type="text" name="prenom"> <br>
@@ -36,14 +37,13 @@
             <input class="cord4" type="checkbox" name="sport" value="sport" required>Sport<br>
             <input class="cord4" type="checkbox" name="music" value="music">music<br>
             <input class="cord4" type="checkbox" name="lecture" value="lecture">lecture<br><br>
-            Bio :<br> <textarea class="i5" name="msg" rows="10" cols="30" required>
-
-                </textarea><br>
+            Bio :<br> <textarea class="i5" name="msg" rows="10" cols="30" ></textarea><br>
             E-Mail :<br><input class="cord3" type="email" name="email"><br>
             Password :<br> <input class="cord3" type="password" name="password"><br><br>
 
             <button class="btn btn-warning">Inscription</button>
         </form>
+        <!-- appel au fichier js pour faire des tests-->
         <script src="../js/script.js"></script>
     </div>
 </body>

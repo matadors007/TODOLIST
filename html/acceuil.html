@@ -3,34 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>acceuil</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-
-
-    <div class="commande">
+    <div class="commande"> <!-- Partie De Boutons -->
         <a class="logo" href="home.html" onclick="passage()"></a>
         <a href="profil.html" onclick="passage()"><input class="button1" type="button" value="PROFIL"></a>
         <a href="connexion.html" onclick="passage()"> <input class="button2" type="button" value="CONNEXION"></a>
 
     </div>
 
-
-
-
-
     <div class="a1">
 
+                               <!-- Partie de la premiere Tableau-->
         <button class="goals" onclick="passage()"><a href="ajout.html"></a> TO DO</a></button>
         <table border="1" class="table1">
             <thead class="thead">
                 <th>Titre</th>
                 <th>Date d'ajout</th>
                 <th>Action</th>
+            </thead>
+
             <tbody>
                 <tr>
                     <td>Cours HTML5</td>
@@ -50,11 +46,14 @@
             </tbody>
 
             <tfoot>
-
             </tfoot>
+
         </table>
+
     </div>
-    <div>
+
+ 
+    <div>     <!-- Partie de la deuxieme Tableau-->
         <p class="done">Done</p>
         <table border="1" class="table2">
             <thead>
@@ -62,6 +61,8 @@
                 <th>Date d'ajout</th>
                 <th>Date Fin</th>
                 <th>Action</th>
+                </thead>
+
             <tbody>
                 <tr>
                     <td>
@@ -101,8 +102,6 @@
 
 
 
-    </div>
-    <script src="../js/script.js"></script>
+    </div> 
 </body>
-
 </html>
