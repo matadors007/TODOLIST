@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amaranth&display=swap');
 body{
     background-image: url("../img/544750.jpg") ;/* l'arriere plan de mes pages*/
     height: 100%;
     background-size: cover;
 
 }
-
-
-  .c{    width: 150px;
+  .button1{    width: 150px;
     height: 40px;
     border:none;                  
 	padding:6px 0 6px 0; 
@@ -21,9 +23,11 @@ body{
     margin-left: 73%;
     margin-right: 15px;
     position: absolute;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 15px;
    
   }
-  .c1{
+  .button2{
     width: 150px;
     height: 40px;
     border:none;                  
@@ -39,10 +43,11 @@ body{
     margin-left: 85%;
     margin-right: 15px;
     position: absolute;
-   
+    font-family: 'Amaranth', sans-serif;
+    font-size: 15px;
   }
 
-  .c2{   
+  .button3{   
        width: 150px;
     height: 40px;
     border:none;                  
@@ -58,21 +63,10 @@ body{
     margin-left: 61%;
     margin-right: 15px;
     position: absolute;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 15px;
   }
-
-  .i4{
-    width: 30%;
-    height: 60px;
-    display: block;
-    position: relative;
-    z-index: 1;
-    border-radius: 25px;
-    overflow: hidden;
-    margin: 0 auto;
-    background: rgb(231, 228, 38);
-  }
-
-  .i5{
+  .bio{
     display: block;
     width: 50%;
     height: 70px;
@@ -83,27 +77,21 @@ body{
     line-height: 1.2;
     padding: 0 5px;
     border-radius: 20px;
-
 }
-
-.i6{
+.cord4{
     
     width: 30%;
     height: 20px;
     font-family: Poppins-Medium;
     font-size: 18px;
     border-radius: 20px;
-
 }
-
-
-
 p{
 font-size: 50px; /* mettre l'ecriture plus grand */
+color: #ece251;
+font-family: 'Indie Flower', cursive;
 }
-
-
-    .text{
+.text{
     width: 572px;     /* mettre l'ecriture plus grand */
     height: 100%;
     
@@ -115,20 +103,20 @@ img{
     top:150px;
     position:absolute;
     border-radius: 30%;
-
 }
 
-.i1{
+.ajout{
     position: absolute;
     left:400px;
     top:200px;
     width: 500px;
     background-color: rgba(255, 255, 255, 0.5) ;
   border-radius: 30px;
-  
+  font-family: 'Lobster', cursive;
   padding: 42px 55px 45px 55px;
+  font-size: 25px;
 }
-.i{
+.formu{
     position: absolute;
     left:400px;
     top:200px;
@@ -139,7 +127,7 @@ img{
 
 }
 
-.i3{
+.cord3{
     display: block;
     width: 50%;
     height: 30px;
@@ -154,12 +142,10 @@ img{
 }
 
 
-.i2{
- 
+.cord2{
     display: block;
     width: 100%;
     height: 30px;
-   
     font-family: Poppins-Medium;
     font-size: 18px;
     color: rgb(0, 160, 80);
@@ -168,38 +154,15 @@ img{
     border-radius: 50px;
 }
 
-.is1{
+.inscrit{
     font-weight: bolder;
     font-style: oblique;
+    font-family: 'Amaranth', sans-serif;
     
 }
-.a1{
-    font-weight: bolder;
-    font-style: oblique;
-}
-.a2{
-    font-weight: bolder;
-    font-style: oblique;
-}
-.p1{
-    border-radius:12px 0 12px 0;
-	background: #f5f5f5;
-	border:none;
-	color:#555;
-	font:bold 12px Verdana;
-	padding:6px 0 6px 0;
-	box-shadow:1px 1px 3px #999;
-}
-.p2{
-    border-radius:12px 0 12px 0;
-	background: #f5f5f5;
-	border:none;
-	color:#555;
-	font:bold 12px Verdana;
-	padding:6px 0 6px 0;
-	box-shadow:1px 1px 3px #999;
-}
-.b{
+
+
+.other_buttons{
     width: 25%;
     border-radius:12px 0 12px 0;
 	background: red;
@@ -208,7 +171,7 @@ img{
 	font:bold 12px Verdana;
 	padding:6px 0 6px 0;
 }
-.b1{
+.goals{
     width:90px ;
     border:none;
 	padding:6px 0 6px 0;
@@ -216,15 +179,18 @@ img{
 	border-bottom:6px solid #4753f3;
 	font:bold 13px Arial;
 	color:#555;
-	background:rgb(136, 133, 133);
+    background:rgb(189, 188, 188);
+    font-family: 'Amaranth', sans-serif;
+    font-size: 20px;
+    
 }
-.table{
+.table1{
     border-radius: 20px;
     width: 100%;
     height: 200px;
     border: solid gold;
     background-color: rgb(255, 255, 255,0.7);
-
+    font-family: 'Merienda', cursive;
 }
 
 .table2{
@@ -233,11 +199,15 @@ img{
     height: 210px;
     border: outset blue;
   background-color: rgb(255, 255, 255,0.7);
+  font-family: 'Amaranth', sans-serif;
+  
+
 }
 .done{
     font-size: 30px;
     color:  rgb(68, 202, 68);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Merienda', cursive;
+   
 }
 .logo{
    
@@ -247,7 +217,8 @@ img{
     margin-bottom: 15px;
     height: 70px;
     width: 10%;
-    
+   
+
 }
 .home{
     text-align: left;
@@ -268,8 +239,20 @@ img{
     height: 120px;
     width: 32%;
     position: absolute;
+  
+
 }
 
 .image{
     opacity: 0.3;
+}
+.btn-warning{
+    background: #ff6600;
+    color:white;
+    width: 30%;
+    height: 50px;
+    display: block;
+    position: relative;
+    border-radius: 25px;
+   left: 130px;
 }

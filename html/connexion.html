@@ -4,25 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Connexion</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <div class="commande">
-    <a class="logo" href="home.html"></a>
-    <a href="connexion.html"> <input class="c" type="button" value="Connexion"></a>
-    <a href="inscription.html"><input class="c1" type="button" value="Inscription"></a>
+    <a class="logo" href="home.html" onclick="passage()"></a>
+    <a href="connexion.html" onclick="passage()"> <input class="button1" type="button" value="CONNEXION"></a>
+    <a href="inscription.html" onclick="passage()"><input class="button2" type="button" value="INSCRIPTION"></a>
   </div>
   <br>
-  <div class="i1">
-
-    <form action="acceuil.html" method="POST" name="log" onsubmit="return valid()">
-      E-Mail<br><input class="i2" type="email" name="mail" required><br>
-      Password<br> <input class="i2" type="password" name="pswd" required> <br>
-      <button class="i4"> <a href="acceuil.html">Login</a> </button>
+  <div class="ajouter">
+    <form class="ajout" action="acceuil.html" method="POST" name="inscrit" onsubmit="return valid()">
+        E-Mail :<br>
+        <input class="cord2" type="email" name="titre" required><br>
+        Password:<br>
+        <input class="cord2" type="password" name="action" required><br><br>
+        <button class="btn btn-warning"> <a href="acceuil.html">Login</a> </button>
     </form>
-
-  </div>
+</div>
   <script src="../js/script.js"></script>
 </body>
 

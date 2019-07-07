@@ -10,10 +10,6 @@ function valid() {
         alert("password est faible");
         return false;
     }
-    else if (document.log.pswd.value.lenght >= 10) {
-        alert("votre mot de passe est passable");
-        return false;
-    }
 }
 function controle() {
     if (document.form.nom.value == '') {

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Ajout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -13,23 +15,23 @@
 
 
     <div class="commande">
-        <a class="logo" href="home.html"></a>
-        <a href="ajout.html"> <input class="c" type="button" value="ajout"></a>
-        <a href="profil.html"><input class="c1" type="button" value="profil"></a>
-        <a href="acceuil.html"> <input class="c2" type="button" value="acceuil"></a>
+        <a class="logo" href="home.html" onclick="passage()"></a>
+        <a href="ajout.html" onclick="passage()"> <input class="button1" type="button" value="AJOUT"></a>
+        <a href="profil.html" onclick="passage()"><input class="button2" type="button" value="PROFIL"></a>
+        <a href="acceuil.html" onclick="passage()"> <input class="button3" type="button" value="ACCEUIL"></a>
 
     </div>
 
 
 
 
-    <div class="formu">
-        <form class="i1" action="acceuil.html" method="POST" name="inscrit" onsubmit="return verif()">
+    <div class="ajouter">
+        <form class="ajout" action="acceuil.html" method="POST" name="inscrit" onsubmit="return verif()">
             Titre :<br>
-            <input class="i2" type="text" name="titre" required><br>
+            <input class="cord2" type="text" name="titre" required><br>
             Action:<br>
-            <input class="i2" type="text" name="action" required><br><br>
-            <button class="i4"> <a href="acceuil.html">Accepter</a> </button>
+            <input class="cord2" type="text" name="action" required><br><br>
+            <button class="btn btn-warning"> <a href="acceuil.html">Accepter</a> </button>
         </form>
     </div>
     <script src="../js/script.js"></script>
